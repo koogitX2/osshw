@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koo's Homepage - Stylesheet 4</title>
+    <style>
+        body {
+            background-color: black;
+            color: #84c754; /* 전체 기본 글자색을 초록색으로 */
+            font-family: "Courier New", monospace; /* 이미지와 유사한 폰트 */
+            margin: 20px;
+            line-height: 26px;
+        }
+
+        .div_navtop {
+            color: #84c754;
+            padding: 15px 0; /* 위아래 여백만 줌 */
+        }
+
+        .div_navtop h1 {
+            margin: 0;
+            font-size: 2em; /* 폰트 크기 조정 */
+        }
+
+        .div_navtop_2 {
+            font-size: 1em;
+            margin: 0;
+        }
+
+        /* 본문과 사이드바를 감싸는 부모 컨테이너 */
+        .content-wrapper {
+            position: relative; /* 자식인 .div_bot의 기준점이 됨 */
+            overflow: auto; /* float 속성 문제 해결 */
+        }
+
+        .main-content {
+            /* 사이드바 너비만큼 오른쪽 여백을 주어 겹치지 않게 함 */
+            margin-right: 340px; 
+        }
+
+        .list {
+            padding: 0;
+            margin: 0;
+            list-style-type: none; /* 리스트 점 제거 */
+        }
+
+        .item {
+            /* 버튼 스타일 모두 제거 */
+            margin-bottom: 5px;
+        }
+        
+        .list .item a {
+            color: #84c754; /* 메뉴 링크는 초록색 */
+            text-decoration: none;
+        }
+
+        .list .item.active a {
+            color: white; /* 활성화된 메뉴만 흰색 */
+            font-weight: bold;
+        }
+        
+        .list .item a:hover {
+            color: white; /* 마우스를 올리면 흰색 */
+        }
+
+        .div_top h1,
+        .div_top h2 {
+            color: #84c754;
+        }
+        
+        /* 사이드바 스타일 */
+        .div_bot {
+            background-color: transparent; /* 배경 없음 */
+            color: white;
+            padding: 10px;
+            border: 1px solid white; /* 흰색 테두리 */
+            border-radius: 4px;
+            width: 320px;
+
+            /* 위치 조정 */
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .div_footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            color: white;
+            border: 1px solid white; /* 흰색 테두리 */
+            border-radius: 4px;
+            margin-top: 15px;
+        }
+        
+        .main-content a {
+            color: white; /* 본문 안의 링크는 흰색 */
+        }
+        .main-content a:hover {
+            color: #84c754;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="div_navtop">
+        <h1>Welcome to Koo's Homepage (2240028)</h1>
+        <p class="div_navtop_2">Use the menu to select different Stylesheets</p>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="main-content">
+            <div class="menu">
+                <ul class="list">
+                    <li class="item"><a href="./index1.html">Stylesheet 1</a></li>
+                    <li class="item"><a href="./style2.html">Stylesheet 2</a></li>
+                    <li class="item"><a href="./style3.html">Stylesheet 3</a></li>
+                    <li class="item active"><a href="./style4.html">Stylesheet 4</a></li>
+                    <li class="item"><a href="./index.html">No Stylesheet</a></li>
+                </ul>
+            </div>
+    
+            <div class="div_top">
+                <h1>Same Page Different Stylesheets</h1>
+                <p>
+                    This is a demonstration of how different stylesheets can change the layout of your HTML page. You can
+                    change the layout of this page by selecting different stylesheets in the menu, or by selecting one of
+                    the following links:<br>
+                    <a href="./index1.html">Stylesheet1</a>,
+                    <a href="./style2.html">Stylesheet2</a>,
+                    <a href="./style3.html">Stylesheet3</a>,
+                    <a href="./style4.html">Stylesheet4</a>.
+                </p>
+                <h2>No Styles</h2>
+                <p>
+                    This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
+                    looks like with no stylesheet:<br>
+                    <a href="#">No Stylesheet</a>.
+                </p>
+            </div>
+        </div>
+    
+        <div class="div_bot">
+            <h3>Side-Bar</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                dolore magna aliquam erat volutpat.</p>
+        </div>
+    </div>
+
+
+    <div class="div_footer">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulpu
+    </div>
+</body>
+
+</html>
